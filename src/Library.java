@@ -1,21 +1,23 @@
 public class Library {
     public static void main(String[] args) {
-        final String appName = "Biblioteka v0.1";
+        final String appName = "Biblioteka v0.2";
 
-        String title = "Zbuntowana";
-        String author = "Veronica Roth";
-        int releaseDate = 2012;
-        int pages = 367;
-        String publisher = "Amber";
-        String isbn = "9788324153497";
+        Book book1 = new Book();
+        book1.title = "Zbuntowana";
+        book1.author = "Veronica Roth";
+        book1.releaseDate = 2012;
+        book1.pages = 367;
+        book1.publisher = "Amber";
+        book1.isbn = "9788324153497";
+
 
         System.out.println(appName);
-        System.out.println("Książki dostepnę w bibliotece:");
-        System.out.println(title);
-        System.out.println(author);
-        System.out.println(releaseDate);
-        System.out.println(pages);
-        System.out.println(publisher);
-        System.out.println(isbn);
+        System.out.println("### Książki dostepnę w bibliotece ###");
+        System.out.println(book1.title);
+        System.out.println(book1.author);
+        System.out.println(book1.releaseDate);
+        System.out.println(book1.pages);
+        System.out.println(book1.publisher);
+        System.out.println(book1.isbn);
     }
 }
